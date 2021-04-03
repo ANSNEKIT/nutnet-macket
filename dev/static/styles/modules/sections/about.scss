@@ -1,0 +1,64 @@
+.about-info {
+  padding: 70px 0;
+}
+
+.about-info__text {
+  color: $grey;
+}
+
+.about-info__title {
+  padding-bottom: 25px;
+}
+
+.about-info__text:first-of-type {
+  padding-bottom: 25px;
+}
+
+.about-info__btn {
+  border: 2px solid $black;
+  color: $black;
+
+  margin-top: 30px;
+}
+
+.about-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 550px;
+
+  @include cover-background;
+  background-image: url(/static/images/content/about_bg.jpg);
+}
+
+.about-video__textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-video__button {
+  display: inline-block;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.about-video__button:hover svg circle{
+  fill: $grey-light;
+}
+
+.about-video__description {
+  font-family: $Roboto;
+  font-size: 16px;
+  font-weight: 900;
+
+  color: $white;
+
+  padding-top: 25px;
+}
