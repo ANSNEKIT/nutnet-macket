@@ -1,1 +1,36 @@
-header { flex: 0 0 auto; }
+.main-header {
+  @include cover-background;
+  background-image: url(/static/images/content/header_bg.jpg);
+}
+.main-header__main-nav {
+  padding-top: 35px;
+}
+
+.header-slogan {
+  margin-top: 145px;
+  padding-bottom: 207px;
+}
+
+.header-slogan__pageTitle {
+  font-family: $PlayfairDisplay;
+  font-size: 32px;
+  font-weight: 900;
+
+  color: $white;
+
+  padding-bottom: 10px;
+}
+
+.header-slogan__text {
+  font-family: $Roboto;
+  font-size: 14px;
+  font-weight: 300;
+
+  color: $white;
+
+  padding-top: 20px;
+}
+
+.header-slogan__btn {
+  margin-top: 50px;
+}

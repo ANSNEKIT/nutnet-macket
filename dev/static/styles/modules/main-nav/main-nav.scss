@@ -1,0 +1,24 @@
+.nav__item {
+  font-family: $Roboto;
+  font-weight: 900;
+  font-size: 13px;
+
+  padding-left: 20px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.nav__itemLink {
+  text-decoration: none;
+  color: $white;
+  &:hover {
+    transition: all .8s ease-out;
+    color: $hover;
+  }
+}
+
+.nav__itemLink.active {
+  color: $active;
+}
