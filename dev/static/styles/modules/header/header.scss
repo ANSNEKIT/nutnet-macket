@@ -2,8 +2,17 @@
   @include cover-background;
   background-image: url(/static/images/content/header_bg.jpg);
 }
+
 .main-header__main-nav {
-  padding-top: 35px;
+  padding-top: 15px;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.main-header__nav {
+  padding-top: 15px;
 }
 
 .header-slogan {
@@ -27,5 +36,8 @@
 }
 
 .header-slogan__btn {
+  border: 2px solid $white;
+  color: $white;
+  
   margin-top: 50px;
 }

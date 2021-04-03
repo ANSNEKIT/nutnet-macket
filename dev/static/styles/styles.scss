@@ -35,7 +35,6 @@ ol, ul {
 }
 
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -64,6 +63,15 @@ button { outline: none; }
   text-align: center;
 }
 
+.section-title {
+  font-family: $PlayfairDisplay;  
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+
+  color: $grey;
+}
+
 .paragraph {
   font-family: $Roboto;  
   font-size: 14px;
@@ -75,8 +83,6 @@ button { outline: none; }
   display: inline-block;
   text-decoration: none;
   padding: 10px 15px;
-  border: 2px solid $white;
-  color: $white;
 
   font-family: $HammersmithOne;
   font-size: 16px;

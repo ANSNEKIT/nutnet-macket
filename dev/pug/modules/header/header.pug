@@ -1,27 +1,29 @@
 block vars
-  - var navItems = ['HOME', 'ABOUT', 'EXPERTISE', 'TEAM', 'WORKS', 'PEOPLE SAY', 'CONTACT'];
+  - var navItems = [{name: 'HOME', href: '#header'}, {name: 'ABOUT', href: '#about'}, {name: 'EXPERTISE', href: '#expertise'}, {name: 'TEAM', href: '#team'}, {name: 'WORKS', href: '#works'}, {name: 'PEOPLE SAY', href: '#people'}, {name: 'CONTACT', href: '#contact'}];
   - var activePage = 'HOME';
   - var pageTitle = 'We Are Awesome Creative Agency';
   - var activeColor = "#00e0d0";
 
-header.main-header
+header#header.main-header
   .container
     block main-nav
       section.main-header__main-nav.d-flex.justify-content-between
         .main-nav__logo
-          img(src="static/images/common/logo.png", alt="Логотип Tajam" width="128" height="50")
+          a(href="#", target="_blank", ) 
+            img(src="static/images/common/logo.png", alt="Логотип Tajam" width="128" height="50")
         nav.main-header__nav.nav
           ul.nav__list-item.d-flex
             each val, idx in navItems
               li.nav__item
-                if activePage === val
-                  a.nav__itemLink.active(href="/")= val
+                if activePage === val.name
+                  a.nav__itemLink.active(href=val.href)= val.name
                 else
-                  a.nav__itemLink(href="/")= val
-
-    block slogan
-      section.header-slogan.text-center
-        h1.header-slogan__pageTitle.text-center= pageTitle
-        hr.text-center(color=activeColor size="1" width="50")
-        p.header-slogan__text.paragraph This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-        a.header-slogan__btn.text-center.btn(href="#") LEARN MORE
+                  a.nav__itemLink(href=val.href)= val.name
+    .row
+      .col-10.offset-1
+        block slogan
+          section.header-slogan.text-center
+            h1.header-slogan__pageTitle.text-center= pageTitle
+            hr.text-center(color=activeColor size="1" width="50")
+            p.header-slogan__text.paragraph This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+            a.header-slogan__btn.text-center.btn(href="#", target="_blank") LEARN MORE
