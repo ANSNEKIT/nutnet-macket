@@ -1,0 +1,39 @@
+#expertise {
+  padding: 70px 0;
+}
+
+.expertise__titles {
+  padding-bottom: 40px;
+}
+
+.titles__header{
+  color: $expertise-gray;
+
+  padding-bottom: 7px;
+}
+
+.titles__description {
+  font-family: $PlayfairDisplay;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: $expertise-gray;
+
+  padding-bottom: 15px;
+}
+
+.cards__row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cards__title {
+  color: $grey;
+
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.cards__text {
+  color: $grey-dark;
+}

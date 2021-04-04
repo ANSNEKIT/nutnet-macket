@@ -2,7 +2,7 @@
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/sprite";
-//@include sprites($spritesheet-sprites);
+@include sprites($spritesheet-sprites);
 
 // шаблонные стили
 html {
@@ -76,6 +76,12 @@ button { outline: none; }
   font-family: $Roboto;  
   font-size: 14px;
   font-weight: 300;
+  line-height: 24px;
+}
+.paragraphBlack {
+  font-family: $Roboto;  
+  font-size: 14px;
+  font-weight: 900;
   line-height: 24px;
 }
 

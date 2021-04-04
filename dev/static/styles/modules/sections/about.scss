@@ -22,14 +22,18 @@
 }
 
 .about-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   height: 550px;
 
   @include cover-background;
   background-image: url(/static/images/content/about_bg.jpg);
+}
+
+.about-video__flex-item {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  height: inherit;
 }
 
 .about-video__textBlock {
