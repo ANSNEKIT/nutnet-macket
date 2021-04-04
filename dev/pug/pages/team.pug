@@ -1,0 +1,22 @@
+block teamVars
+  - var grey = '#584e75';
+  - var cards = [{src: '/static/images/content/team.png', title: 'SEMF UCUK', description: 'CEO & FOUNDER'}, {src: '/static/images/content/team.png', title: 'DIK ADALIN', description: 'ENGINEERING'}, {src: '/static/images/content/team.png', title: 'JENG KOL', description: 'DESIGNER'}, {src: '/static/images/content/team.png', title: 'PET ROMAK', description: 'MARKETING'}];
+
+section#team
+  .container
+    header.team__titles.text-center.section-template
+      h2.team__title.section-template__title.section-template__title--light MEET OUR AMAZING TEAM
+      p.team__description.section-template__description.section-template__description--light Lorem ipsum dolor sit amet proin gravida nibh vel velit
+      hr.text-center(color=grey size="1" width="50")
+    .team__cards
+      .row
+        each card in cards
+          .col-3
+            .team__image
+              img(class="m-auto", src=card.src, alt="team photo", width="220", height="229")
+            .team__card
+              h2.team__card-title.text-center.paragraphBlack.paragraphBlack--white= card.title
+              p.team__card-text.text-center.paragraph.paragraph--white= card.description
+    footer.team-footer.text-center
+      p.team-footer__text.paragraph.paragraph--white Become part of our dream team, let’s join us !
+      a.btn.btn--white(href="#", target="_blank") WE ARE HIRING

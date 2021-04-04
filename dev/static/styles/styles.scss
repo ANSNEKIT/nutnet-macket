@@ -63,13 +63,38 @@ button { outline: none; }
   text-align: center;
 }
 
-.section-title {
+.section-template__title {
   font-family: $PlayfairDisplay;  
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
+  word-spacing: 5px;
 
   color: $grey;
+
+  &--expGray {
+    color: $expertise-gray;
+  }
+
+  &--light {
+    color: $white;
+  }  
+}
+
+.section-template__description {
+  font-family: $PlayfairDisplay;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: $grey;
+
+  &--expGray {
+    color: $expertise-gray;
+  }
+
+  &--light {
+    color: $light;
+  }
 }
 
 .paragraph {
@@ -77,12 +102,20 @@ button { outline: none; }
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+
+  &--white {
+    color: $light;
+  }
 }
 .paragraphBlack {
   font-family: $Roboto;  
   font-size: 14px;
   font-weight: 900;
   line-height: 24px;
+
+  &--white {
+    color: $white;
+  }
 }
 
 .btn {
@@ -95,6 +128,16 @@ button { outline: none; }
   font-weight: 400;
 
   border-radius: 2px;
+
+  &--white {
+    border: 2px solid $white;
+    color: $white;
+  }
+
+  &--black {
+    border: 2px solid $black;
+    color: $black;
+  }
 
   &:hover {
     transition: all 1s ease-in;

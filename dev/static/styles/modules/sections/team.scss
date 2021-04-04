@@ -1,0 +1,39 @@
+#team {
+  @include cover-background;
+  background-image: url(/static/images/content/header_bg.jpg);
+
+  padding: 65px 0;
+}
+
+.team__title {
+  padding-bottom: 10px;
+}
+
+.team__description {
+  padding-bottom: 10px;
+}
+
+.team__cards {
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
+
+.team__card {
+  width: 220px;
+
+  margin: 0 auto;
+
+  border: 1px solid $white;
+}
+
+.team__card-title {
+  padding-top: 15px;
+}
+
+.team__card-text {
+  padding-bottom: 15px;
+}
+
+.team-footer__text {
+  padding-bottom: 20px;
+}
