@@ -59,6 +59,15 @@ input,
 select,
 button { outline: none; }
 
+button {
+  display: inline-block;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .text-center {
   text-align: center;
 }

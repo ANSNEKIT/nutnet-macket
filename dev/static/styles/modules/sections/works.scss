@@ -1,0 +1,30 @@
+#works {
+  padding: 70px 0;
+}
+
+.works__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works__link {
+  vertical-align: bottom;
+  text-decoration: none;
+
+  &:hover {
+    color: $active;
+  }
+
+  &::after {
+    content: '>';
+    padding-left: 5px;
+  }
+}
+
+.works__main {
+  max-width: 1575px;
+
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 70px;
+}
