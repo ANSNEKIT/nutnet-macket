@@ -1,0 +1,27 @@
+.modal(
+  id="modal-video"
+  tabindex="-1"
+  aria-labelledby="modal-title"
+  aria-hidden="true"
+  )
+  .modal-dialog.modal-dialog-centered.modal-lg
+    .modal-content
+      .modal-header
+        h5.modal-title.paragraphBlack#modal-title OUR HISTORY
+        button.btn-close(
+          id="modal-close"
+          type="button"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        )
+      .modal-body
+        iframe(
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KvUgaHTNit4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+        )
+.modal-backdrop
