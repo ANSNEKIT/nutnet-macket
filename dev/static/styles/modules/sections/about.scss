@@ -22,7 +22,7 @@
   height: 550px;
 
   @include cover-background;
-  background-image: url(/static/images/content/about_bg.jpg);
+  background-image: url(../images/content/about_bg.jpg);
 }
 
 .about-video__flex-item {
