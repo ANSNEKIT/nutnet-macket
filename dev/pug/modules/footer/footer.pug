@@ -1,12 +1,12 @@
 footer.main-footer
   .container
     .row
-      .col-4  
+      .col-md-4  
         .main-footer__head
           img(src="/static/images/common/Logo.png", alt="Logo Tajam", width="128", height="50")
         .main-footer__main
           p.paragraph.paragraph--white lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
-      .col-4.main-footer__left
+      .col-md-4.main-footer__left
         .main-footer__head
           h3.main-footer__title-section.paragraphBlack.paragraphBlack--white OUR STUDIO
         .main-footer__main
@@ -17,7 +17,7 @@ footer.main-footer
             span.main-footer__icon.icon-phone
             p.main-footer__contacts-address.paragraph.paragraph--white 
               a.main-footer__contacts-tel(href="tel:+622122243333") (+62) 21-2224 3333
-      .col-4
+      .col-md-4
         .main-footer__head
           h3.main-footer__title-section.paragraphBlack.paragraphBlack--white STAY IN TOUCH
         .main-footer__main
@@ -31,16 +31,17 @@ footer.main-footer
                 maxLength="30"
               )
               button.main-footer__form-btn(type="submit")
-                .icon-btn-paper
+                span.icon-btn-paper.d-block
           .main-footer__social-block.main-footer__wrapper
-            .main-footer__social-icon.icon-facebook
-            .main-footer__social-icon.icon-twitter
-            .main-footer__social-icon.icon-dribbble
-            .main-footer__social-icon.icon-instagram
-            .main-footer__social-icon.icon-gplus
-            .main-footer__social-icon.icon-youtube
+            .row
+              .main-footer__social-icon.icon-facebook.col-md-2.my-1
+              .main-footer__social-icon.icon-twitter.col-md-2.my-1
+              .main-footer__social-icon.icon-dribbble.col-md-2.my-1
+              .main-footer__social-icon.icon-instagram.col-md-2.my-1
+              .main-footer__social-icon.icon-gplus.col-md-2.my-1
+              .main-footer__social-icon.icon-youtube.col-md-2.my-1
     .row.main-footer__footer
-      .col-6
+      .col-md-6
         ul.main-footer__nav-list
           li.main-footer__nav-item
             a.main-footer__nav-link(href="#", target="_blank")  HELP
@@ -48,5 +49,5 @@ footer.main-footer
             a.main-footer__nav-link(href="#", target="_blank")  TERMS & CONDITION
           li.main-footer__nav-item
             a.main-footer__nav-link(href="#", target="_blank")  PRIVACY
-      .col-6.text-center
+      .col-md-6.text-center
         p.main-footer__coopyright.paragraph.paragraph--white Copyright © 2015 - Tajem Creative

@@ -11,10 +11,10 @@ section#team
     .team__cards
       .row
         each card in cards
-          .col-3
+          .team-card.col-lg-3.col-sm-6
             .team__image
               img(class="m-auto", src=card.src, alt="team photo", width="220", height="229")
-            .team__card
+            .team__descr-card
               h2.team__card-title.text-center.paragraphBlack.paragraphBlack--white= card.title
               p.team__card-text.text-center.paragraph.paragraph--white= card.description
     footer.team-footer.text-center

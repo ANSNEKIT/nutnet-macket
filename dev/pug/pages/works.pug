@@ -6,11 +6,11 @@ section#works
     .works__wrapper.container
       h2.works__title.section-template__title OUR WORKS
       a.works__link.paragraph(href="#", target="_blank") See All Project in dribbble
-  main.works__main
-    .row
+  .works__main
+    .row.m-0
       each count in counts
-        .col-lg-2.col-md-3.col-sm-4
-          img(src=`/static/images/content/works-top-${count}.png`, alt="our work image", width="267", height="200")
+        .col-lg-2.col-md-3.col-sm-4.px-0
+          img.works__img(src=`/static/images/content/works-top-${count}.png`, alt="our work image", height="200")
   .container
     .works__footer.text-center
       button.works__button.btn.btn--black LOAD MORE
