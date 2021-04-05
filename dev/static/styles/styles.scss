@@ -148,6 +148,12 @@ button {
     color: $black;
   }
 
+  &--submit {
+    padding: 8px 35px;
+    border: 2px solid $black;
+    color: $black;
+  }
+
   &:hover {
     transition: all 1s ease-in;
 

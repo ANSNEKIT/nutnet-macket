@@ -1,0 +1,42 @@
+section#contact
+  .container
+    h2.contact__header.section-template__title.text-center GIVE US A GOOD NEWS
+    form.contact-form(action="get") 
+      .col-6.offset-3.mb-4
+        label.form-label.visually-hidden(for="name") 
+        input.contact-form__field.form-control(
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Name"
+          maxLength="100"
+        )
+      .col-6.offset-3.mb-4
+        label.form-label.visually-hidden(for="email")
+        input.contact-form__field.form-control(
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          maxLength="100"
+        )
+      .col-6.offset-3.mb-4
+        label.form-label.visually-hidden(for="subject")
+        input.contact-form__field.form-control(
+          id="subject"
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          maxLength="100"
+        )
+      .col-6.offset-3.mb-4
+        label.form-label.visually-hidden(for="message")
+        textarea.contact-form__field.form-control(
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          rows="7"
+        )
+    .text-center
+      button.btn.btn--submit(type="submit") SUBMIT
+

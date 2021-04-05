@@ -1,0 +1,23 @@
+section#contact {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.contact-form .form-control {
+  width: 100%;
+
+  border-style: none;
+  border: 1px solid $grey-light;
+
+  &:focus {
+    border: 2px solid $black;
+  }
+}
+
+.contact-form__field {
+  padding: 10px 20px;
+}
+
+.contact__header {
+  padding-bottom: 25px;
+}
