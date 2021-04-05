@@ -1,1 +1,104 @@
-footer { flex: 0 0 auto; }
+.main-footer {
+  @include cover-background;
+  background-image: url(/static/images/content/footer_bg.jpg);
+
+  padding: 70px 0;
+}
+
+.main-footer__nav-list {
+  display: flex;
+}
+
+.main-footer__nav-item {
+  padding-right: 30px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+.main-footer__nav-link {
+  font-family: $Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+
+  color: $white;
+  text-decoration: none;
+
+  &:visited {
+    color: $grey-light;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+}
+
+.main-footer__head {
+  padding-bottom: 20px;
+}
+
+.main-footer__main {
+  padding-bottom: 65px;
+}
+
+.main-footer__title-section {
+  padding-top: 15px;
+}
+
+.main-footer__contacts-address {
+  margin-left: 15px;
+}
+
+.main-footer__contacts-tel {
+  color: $white;
+  text-decoration: none;
+
+  &:visited {
+    color: $grey-light;
+  }
+}
+
+.main-footer__form-inp {
+  border: 1px solid $grey-light;
+  background-color: transparent;
+  color: $white;
+
+  padding: 10px 18px;
+
+  &:focus{
+    border: 1px solid $white;
+  }
+}
+
+.main-footer__social-block {
+  padding-top: 25px;
+}
+
+.main-footer__social-icon {
+  margin-right: 10px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+.main-footer__form-btn {
+  width: 70px;
+  height: 46px;
+
+  background-color: $white;
+  opacity: .5;
+
+  margin-left: 10px;
+
+  &:hover {
+    transition: all .7s ease-in;
+    opacity: 1;
+  }
+
+  .icon-btn-paper {
+    margin: 0 auto;
+  }
+}
