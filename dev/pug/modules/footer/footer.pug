@@ -3,7 +3,8 @@ footer.main-footer
     .row
       .col-md-4  
         .main-footer__head
-          img(src="static/images/common/Logo.png", alt="Logo Tajam", width="128", height="50")
+          a(href="#home", target="_blank") 
+            img(src="./static/images/common/Logo.png", alt="Logo Tajam", width="128", height="50")
         .main-footer__main
           p.paragraph.paragraph--white lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
       .col-md-4.main-footer__left
@@ -32,14 +33,20 @@ footer.main-footer
               )
               button.main-footer__form-btn(type="submit")
                 span.icon-btn-paper.d-block
-          .main-footer__social-block.main-footer__wrapper
-            .row
-              .main-footer__social-icon.icon-facebook.col-md-2.my-1
-              .main-footer__social-icon.icon-twitter.col-md-2.my-1
-              .main-footer__social-icon.icon-dribbble.col-md-2.my-1
-              .main-footer__social-icon.icon-instagram.col-md-2.my-1
-              .main-footer__social-icon.icon-gplus.col-md-2.my-1
-              .main-footer__social-icon.icon-youtube.col-md-2.my-1
+          
+            ul.main-footer__social-block.main-footer__wrapper
+              li.main-footer__social-icon
+                a.icon-facebook.d-block(href="https://facebook.com", target="_blank")
+              li.main-footer__social-icon
+                a.icon-twitter.d-block(href="https://twitter.com/?lang=ru", target="_blank") 
+              li.main-footer__social-icon
+                a.icon-dribbble.d-block(href="#", target="_blank") 
+              li.main-footer__social-icon
+                a.icon-instagram.d-block(href="https://www.instagram.com/?hl=ru", target="_blank") 
+              li.main-footer__social-icon
+                a.icon-facebook.d-block(href="#", target="_blank", width="35", height="35") 
+              li.main-footer__social-icon
+                a.icon-youtube.d-block(href="https://www.youtube.com/", target="_blank") 
     .row.main-footer__footer
       .col-md-6
         ul.main-footer__nav-list
